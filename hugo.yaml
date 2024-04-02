@@ -1,0 +1,127 @@
+baseURL: https://halftimehalfwits.stream/
+languageCode: en-us
+title: "Half Time Half Wits: a Podcast"
+theme: ["PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: "G-2MFCEMP9KW"
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "Half Time Half Wits"
+  description: "A podcast :)"
+  keywords: [Blog, Podcast, Football, Soccer]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon_600x600.jpg"
+    favicon16x16: "/favicon_16x16.jpg"
+    favicon32x32: "/favicon_32x32.jpg"
+    apple_touch_icon: "/apple-touch-icon.jpg"
+    safari_pinned_tab: "/apple-touch-icon.jpg"
+
+  label:
+    text: " "
+    icon: "/apple-touch-icon.png"
+    iconHeight: 35
+
+  profileMode:
+    enabled: true
+    title: "Half Time Half Wits"
+    subtitle: "A couple of idiots try to Frankenstein their brain cells together to combine their football knowledge into a single cohesive thought worth listening to."
+    imageUrl: "/podcast.jpg"
+    imageTitle: "Podcast Image" # optional
+    imageWidth: 240 # custom size
+    imageHeight: 240 # custom size
+    buttons:
+    #  - name: Archive
+    #    url: "/archive"
+      - name: listen now
+        url: "https://open.spotify.com/show/40XlDUkbOxCl0G4NBGn5Co?si=bea45a5bae254578"
+  
+  # socialIcons:
+  #   - name: x
+  #     url: "https://x.com/"
+  #   - name: stackoverflow
+  #     url: "https://stackoverflow.com"
+  #   - name: github
+  #     url: "https://github.com/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    # bing:
+    #   SiteVerificationTag: "XYZabc"
+    # yandex:
+    #   SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: listen-hamburger
+      name: listen now
+      url: https://open.spotify.com/show/40XlDUkbOxCl0G4NBGn5Co?si=bea45a5bae254578
+      weight: 30
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
